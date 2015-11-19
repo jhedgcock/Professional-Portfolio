@@ -1,0 +1,540 @@
+
+/*GENERAL*/
+* {box-sizing: border-box;}
+body{
+	max-width: 100%;
+	font-size: 100%;
+	background: url(images/starry-night-bg.jpg) no-repeat top center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ a {text-decoration: none;}
+
+/*MAIN CONTAINERS/WRAPPERS*/
+.wrapper{
+
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden; /*for floated elements when containers collapse*/
+}
+.nav-wrapper{
+
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden; /*for floated elements when containers collapse*/
+}
+.clearfix{clear: both;}
+
+.strong{font-family: Cambria, "Liberation Serif", Times, "Times New Roman", serif; font-style: italic;}
+
+/*NAVIGATION*/
+#hamburger{
+	display: none; 
+	position: relative;
+	}
+
+#logo{
+	padding-top: 1%;/*pushes down and makes smaller*/
+	height: 70px; 
+	width: 70px;
+}
+	
+header {
+
+  position: relative;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #33ccff;
+
+}
+
+nav{
+float :right;
+width: 100%;
+}
+	
+#nav li {
+	float: left; 
+	/*margin-left: 15%;
+	line-height: 4em;*/
+	text-align: right;
+	min-width: 25%; /* fallback for non-calc() browsers */
+    width: calc(100% /4);
+	text-align: center;
+}
+#nav a {
+	display: block;
+	text-decoration: none;
+	font-family: Source Sans Pro, Helvetica, arial, sans-serif;
+	font-weight: 800;
+	color: white;
+	font-size: 1.5em;
+	
+}
+#nav a:hover {color: rgba(27,43,104,0.80);}
+
+
+/*#nav:after{*//*zig zag border bottom*/
+	/*	background: 
+		linear-gradient(-45deg, transparent 16px, #33ccff 0), 
+		linear-gradient(45deg, transparent 16px, #33ccff  0);
+        background-repeat: repeat-x;
+		background-position: left bottom;
+        background-size: 22px 32px;
+        content: "";
+        display: block;
+		width: 100%;
+		height: 32px;
+ 	    position: absolute;
+		top:60px;/*change this when other elements push it down*/
+		/*left:0px;
+	
+	}*/
+
+
+/*BANNER*/
+#banner{ 
+	display: block;
+	min-width: 100%;
+	padding-top: 8%;
+	
+}
+	
+#banner h1{
+	color:  #ffcc33;
+	font-size:3.75em;
+	font-family: Source Sans Pro, Helvetica, arial, sans-serif;
+	font-weight: 800;
+	text-align: left;
+	padding-bottom: 1%;
+	}
+#banner h2{
+	color: #ffcc33;
+	font-size:2em;
+	font-family: Source Sans Pro, Helvetica, arial, sans-serif;
+	text-align: left;
+	padding-bottom: 1%;
+	}
+
+
+
+/*Main*/
+ #main{
+	margin-top: 3%;
+	height: 300px;
+	font-family: Source Sans Pro, Helvetica, arial, sans-serif;
+}
+	 
+#main h3 {
+	color: white; 
+	font-size: 2.5em;
+	line-height: 2em; 
+	font-weight: 800;	
+	}
+
+#main p{
+	font-size: 1.15em;
+	line-height: 1.15em;
+	color: white;
+	width: 75%;
+	}
+
+
+.more  {
+	font-size: 1.05em;
+	text-decoration: none;
+	margin-left: 0%;
+	margin-top: 3%;
+	color: white;
+	display: inline-block;
+	background: #33ccff;
+	padding: 3% 5%;
+	}
+.more:hover  {
+	background: #FFCC33;
+	}
+	
+section a {
+	color: #33ccff;
+	}
+	
+/************
+ABOUT PAGE
+*************/
+#about{padding:  4% 0;}
+#about p {
+	color: white;
+	font-size: 1.50em;
+	line-height: 1.45em;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	}
+#skills-box{
+	background: #33ccff; 
+	height: 350px;
+	}
+	
+#skills-box h3{
+	font-size: 2.70em;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #33ccff;
+	margin-bottom: 1%;
+	background: white;
+	box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.2);
+	padding: 3% 0%;
+	margin-bottom: 1.6%;
+	font-weight:800;
+	text-align: center;
+	
+	
+	}
+#skills-box ul {
+	margin-left: 3%;
+	border-bottom: 2px solid white;
+	}
+#skills-box li{
+	color: white;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+
+	font-size: 1.50em;
+	padding:  2% 2%;
+	}
+	
+	/************
+PORTFOLIO PAGE
+*************/
+#portfolio {font-family: Source Sans Pro;}
+#portfolio h3{
+	color: white; 
+	font-size: 1.50em; 
+	font-weight: 800; 
+	text-transform: uppercase;
+	}
+	
+#portfolio ul, #portfolio p{
+	color: white; font-size: 1.10em;line-height: 1.10em;
+	}
+#portfolio li{ 
+	color: #ffcc33;
+	padding: 2% 0; 
+	}	
+#portfolio p{font-size: 1.10em;padding: 2% 0;}
+#portfolio a{text-decoration: none; color: #ffcc33;}
+#portfolio a:hover{color: #33ccff;}
+
+
+/*FOOTER*/
+
+ footer{
+	 position: relative;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 background: #33ccff;
+
+	 }
+
+footer p{
+	font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+	font-size: .95em;
+	line-height: .95em;
+	float: left;
+	color: white;
+	padding: 1%;
+	
+	}
+	
+#social-med{
+		float: left; padding-top: 1%;
+}
+
+#social-med img {
+	
+	float: left;
+	margin-right: 3%;
+	}
+	
+#copyright{
+	float: left;
+}
+
+.drop{ left: 0;}
+/***************MEDIA QUERIES********/
+
+	
+	@media screen and (max-width: 620px){
+		.nav-wrapper{width: 100%;}
+		body{margin: 0 auto;}
+		
+		nav{
+		float :none;
+		position: absolute;
+		left: -500px;
+		top: 60px;/*height of header 60px*/
+		}
+	
+		#nav li {
+		float: none;
+		
+		margin: 0 auto;
+		width: 100%;
+		background: #33ccff;
+		}
+
+		#nav a {
+		display: block;
+		text-align: center;
+		font-size: 1.25em;
+		line-height: 1.25em;
+		}
+		
+		#hamburger{
+			display: block;
+			position: absolute;
+			top: 2%; 
+			right: 2%; 
+			}
+		
+		#logo{position: absolute; margin: 0 a}
+		
+		.intro{
+			float:none;
+		}
+		
+		#nav:after{display: none;}
+		
+		footer{
+		position: relative;
+		
+		}
+}
+/* LAYOUT FRAMEWORK GENERAL RULES ========================================
+========================== */	
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { 
+	margin-left: 0; 
+	}
+
+/*  GRID OF THREE   ===================================================
+========================== */
+.span_3_of_3 {
+	width: 100%; 
+}
+
+.span_2_of_3 {
+	width: 66.13%; 
+}
+
+.span_1_of_3 {
+	width: 32.26%; 
+}
+
+/*  GO FULL WIDTH AT LESS THAN 620 PIXELS */
+
+@media only screen and (max-width: 620px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
+}
+
+
+/*  GRID OF FOUR   ============================================================================= */
+
+	
+.span_4_of_4 {
+	width: 100%; 
+}
+
+.span_3_of_4 {
+	width: 74.6%; 
+}
+
+.span_2_of_4 {
+	width: 49.2%; 
+}
+
+.span_1_of_4 {
+	width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 620 PIXELS */
+
+@media only screen and (max-width: 620px) {
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%; 
+	}
+}
+
+/****************
+GRID OF EIGHT
+*****************/
+.span_8_of_8 {
+	width: 100%;
+}
+
+.span_7_of_8 {
+  	width: 87.3%;
+}
+
+.span_6_of_8 {
+  	width: 74.6%;
+}
+
+.span_5_of_8 {
+  	width: 61.9%;
+}
+
+.span_4_of_8 {
+  	width: 49.2%;
+}
+
+.span_3_of_8 {
+  	width: 36.5%;
+}
+
+.span_2_of_8 {
+  	width: 23.8%;
+}
+
+.span_1_of_8 {
+  	width: 11.1%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_8, .span_2_of_8, .span_3_of_8, .span_4_of_8, .span_5_of_8, .span_6_of_8, .span_7_of_8, .span_8_of_8 { width: 100%; }
+}
+
+/*  GRID OF TWELVE   ============================================================================= */
+
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+	width: 91.53%;
+}
+
+.span_10_of_12 {
+	width: 83.06%;
+}
+
+.span_9_of_12 {
+	width: 74.6%;
+}
+
+.span_8_of_12 {
+	width: 66.13%;
+}
+
+.span_7_of_12 {
+	width: 57.66%; 
+}
+
+.span_6_of_12 {
+	width: 49.2%; 
+}
+
+.span_5_of_12 {
+	width: 40.73%; 
+}
+
+.span_4_of_12 {
+	width: 32.26%; 
+}
+
+.span_3_of_12 {
+	width: 23.8%;
+}
+
+.span_2_of_12 {
+	width: 15.33%; 
+}
+
+.span_1_of_12 {
+	width: 6.86%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_12_of_12 {
+		width: 100%; 
+	}
+	.span_11_of_12 {
+		width: 100%; 
+	}
+	.span_10_of_12 {
+		width: 100%; 
+	}
+	.span_9_of_12 {
+		width: 100%; 
+	}
+	.span_8_of_12 {
+		width: 100%; 
+	}
+	.span_7_of_12 {
+		width: 100%; 
+	}
+	.span_6_of_12 {
+		width: 100%; 
+	}
+	.span_5_of_12 {
+		width: 100%; 
+	}
+	.span_4_of_12 {
+		width: 100%; 
+	}
+	.span_3_of_12 {
+		width: 100%; 
+	}
+	.span_2_of_12 {
+		width: 100%; 
+	}
+	.span_1_of_12 {
+		width: 100%; 
+	}
+}
+/************************
+TYPE SCALING EXPERIMENTO
+*************************/
+    @media screen and (min-width:1200px) {
+        body { font-size:100%; } /* Increase the font size */
+    }
+    @media screen and (min-width:1400px) {
+        html { padding:0 15%; } /* Reduce the container width */
+    }
+    @media screen and (min-width:1600px) {
+        body { font-size:125%; } /* Increase the font size */
+    }
+    @media screen and (min-width:1800px) {
+        html { padding:0 20%; } /* Reduce the container width */
+    }

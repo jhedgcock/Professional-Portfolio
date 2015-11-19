@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jennifer Hedgcock Portfolio | Home</title>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,300' rel='stylesheet' type='text/css'>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="reset.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(function() {
+	var menuVis = false;
+	$("#hamburger").click(function() {
+		$("#nav").toggleClass("drop");
+	});
+});
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-wrapper">
+    <img id="logo" class="span_1_of_3" src="images/logo100x100.svg"/>
+       <img id="hamburger" src="images/menu-icon.png"/>
+        <nav id="nav" class="span_2_of_3">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Email</a></li>
+                
+              </ul>
+        </nav>
+           </div>
+</header>
+<div id="banner" class="span_3_of_3">
+	<div class="wrapper">
+    	<div class="intro-bg">
+        	<h1>Hi, I'm Jennifer!</h1>
+            <h2>I'm a Web Designer &amp; Developer</h2>
+            <h2>I design and build responsive websites from scratch.</h2>
+ 	    </div>
+  </div>
+</div>
+  <div class="wrapper">
+  <div id="main">
+    <section class="col span_1_of_3 ">
+      <h3>Who Am I</h3>
+      <p>My name is Jennifer Hedgcock. I am a Web Designer &amp; Developer, animal lover, and world traveler living in Milwaukee, Wisconsin.<br></p><p><a class="more" href="about.html">View About</a></p>
+      </section> 
+    <section class="col span_1_of_3">
+      <h3>What I Do</h3>
+      <p>I design &amp; develop custom websites from scratch using semantic markup and modern coding and design practices.</p><p><a class="more" href="work.html">View Work</a></p>
+      </section>
+    <section class=" col span_1_of_3">
+      <h3>Contact Me</h3>
+      <p>Send me a message! Click <a href="mailto:jennifer.hedgcock@gmail.com"> here </a> to send me an email. You can also connect with me on <a href="https://twitter.com/jenhedgcock">Twitter</a>, <a href="https://www.linkedin.com/in/jhedgcock">LinkedIn, </a> and  <a href="https://github.com/jhedgcock">Github</a>.</p>       
+<p> <a class="more" href="mailto:jennifer.hedgcock@gmail.com">Email Me</a> </p>
+      </section>
+  </div><!--#main END-->
+  </div>
+  <div class="clearfix"></div>
+ 
+  <footer class=" span_3_of_3">
+       <div class="wrapper">
+           <div id="copyright" class="col span_1_of_3"> 
+             <p>&copy; 2015 All Rights Reserved.<br> Site Design &amp; Code made from scratch by Jennifer Hedgcock</p>
+           </div>
+ 	<div id="copyright" class="col span_1_of_3"> 
+            <h2>Email Me</h2>
+            <p>jenniferhedgcock@gmail.com</p>
+           </div>
+        <div id="social-med" class="col span_1_of_3 ">
+              <a href="https://www.linkedin.com/pub/jennifer-hedgcock/45/325/826"><img src="images/social/linkedin32x.png"/></a>
+              <a href="https://twitter.com/jenhedgcock"><img src="images/social/twitter32x.png"/></a> 
+              <a href="https://github.com/jhedgcock"><img src="images/social/github32x.png"/></a>
+          </div><!--.soc-medi-icons END-->
+     </footer>
+
+
+</body>
+</html>
